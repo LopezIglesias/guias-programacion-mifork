@@ -17,10 +17,10 @@ Por favor, escribe en impersonal las respuestas.
 
 ## 1. ¿Cuáles son las cuatro características básicas de la programación orientada a objetos? Describe brevemente cada una
 
-### -Abstracción: olvidarse de los detalles, ayuda a manejar mejor temas complejos y facilita el mantenimiento de código.
-- Encapsulación: unir información y funciones sobre esa información en el mismo código. Sirve para ocultar información y facilitar la abstacción
-- Herencia: permite crear jerarquías.
-- Polimorfismo: misma función con distintas implementaciones.
+### - Abstracción: olvidarse de los detalles, ayuda a manejar mejor temas complejos y facilita el mantenimiento de código.
+### - Encapsulación: unir información y funciones sobre esa información en el mismo código. Sirve para ocultar información y facilitar la abstacción
+### - Herencia: permite crear jerarquías.
+### - Polimorfismo: misma función con distintas implementaciones.
 
 
 ## 2. Cita cuatro lenguajes populares que permitan la programación orientada a objetos
@@ -31,19 +31,19 @@ Por favor, escribe en impersonal las respuestas.
 ## 3. Los paradigmas anteriores a la POO, ¿Qué es la **programación estructurada**? y, todavía mejor, ¿Qué es la **programación modular**?
 
 ### Ensamblador: secuencia de instrucciones y saltos arbitrarios.
-Estructurada: introduce secuencias, bifurcaciones e iteraciones. Elimina los saltos arbitrarios.
-Modular: introduce librerias, paquetes, interfaz,... . Ayuda a encapsular y reutilizar código.
+### Estructurada: introduce secuencias, bifurcaciones e iteraciones. Elimina los saltos arbitrarios.
+### Modular: introduce librerias, paquetes, interfaz,... . Ayuda a encapsular y reutilizar código.
 
 ## 4. ¿Qué tres elementos definen a un objeto en programación orientada a objetos?
 
 ### - Identidad: todo objeto tiene identidad única
-- Estado (atributos): valor de los atributos del objeto.
-- Comportamiento (módulos): funciones que puede hacer el objeto.
+### - Estado (atributos): valor de los atributos del objeto.
+### - Comportamiento (módulos): funciones que puede hacer el objeto.
 
 ## 5. ¿Qué es una clase? ¿Es lo mismo que un objeto? ¿Qué es una instancia? ¿Todos los lenguajes orientados a objetos manejan el concepto de clase?
 
 ### -Clase: molde que define el estado y comportamiento.
-- Objetos o instancias: cada una de las instancias concretas de una clase.
+### - Objetos o instancias: cada una de las instancias concretas de una clase.
 
 
 ## 6. ¿Dónde se almacenan en memoria los objetos? ¿Es igual en todos los lenguajes? ¿Qué es la **recolección de basura**? 
