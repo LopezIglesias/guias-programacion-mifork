@@ -92,7 +92,10 @@ Por favor, escribe en impersonal las respuestas.
 
 ## 9. ¿Cuál es el punto de entrada en un programa en Java? ¿Qué es `static` y para qué vale? ¿Sólo se emplea para ese método `main`? ¿Para qué se combina con `final`?
 
-### Respuesta
+### El punto de entrada de un programa en Java es siempre el método main, cuyo encabezado estándar es
+### public static void main(String[] args). Este método es la primera función que ejecuta la Máquina Virtual de Java cuando se inicia un programa.
+### La palabra clave static indica que el método o atributo pertenece a la clase y no a una instancia concreta. En el caso de main, esto permite que la JVM lo invoque sin necesidad de crear un objeto primero, lo cual sería imposible si no fuera estático. En general, static se utiliza para atributos compartidos entre todos los objetos y para métodos que realizan operaciones independientes del estado interno de una instancia.
+### La combinación de static con final se emplea para definir constantes. final indica que un valor no puede modificarse después de asignarse. Cuando un atributo se declara como static final, significa que es un valor compartido por toda la clase y que además no se puede modificar durante la ejecución.
 
 ## 10. Intenta ejecutar un poco de Java de forma básica, con los comandos `javac` y `java`. ¿Cómo podemos compilar el programa y ejecutarlo desde linea de comandos? ¿Java es compilado? ¿Qué es la **máquina virtual**? ¿Qué es el *byte-code* y los ficheros `.class`?
 
