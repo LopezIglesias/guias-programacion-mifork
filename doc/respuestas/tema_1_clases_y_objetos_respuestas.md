@@ -48,7 +48,9 @@ Por favor, escribe en impersonal las respuestas.
 
 ## 6. ¿Dónde se almacenan en memoria los objetos? ¿Es igual en todos los lenguajes? ¿Qué es la **recolección de basura**? 
 
-### Respuesta
+### Los objetos suelen almacenarse en memoria dinámica, una zona que se reserva durante la ejecución del programa cuando se crean instancias de clases. En lenguajes como Java, esta memoria corresponde al heap, un espacio gestionado automáticamente por la máquina virtual. A diferencia de C, donde la reserva dinámica se hace manualmente con malloc o new, en Java no se especifica dónde se ubica el objeto, ya que su administración queda completamente delegada al tiempo de ejecución. Las referencias a esos objetos suelen almacenarse en la pila (stack), similar a cómo se manejan los punteros en C.
+### No todos los lenguajes gestionan la memoria de la misma manera. En C++ los objetos pueden crearse tanto en la pila como en el heap según cómo se declaren, mientras que en lenguajes como Java o Python, los objetos residen siempre en memoria dinámica. Otros lenguajes de bajo nivel permiten un control más explícito sobre la ubicación exacta del objeto, mientras que los lenguajes de alto nivel priorizan la abstracción y simplificación del manejo de memoria.
+### La recolección de basura (garbage collection) es un mecanismo automático que identifica y libera memoria ocupada por objetos que ya no son accesibles por el programa. Su finalidad es evitar fugas de memoria sin requerir que el programador libere los recursos manualmente, lo que reduce errores típicos de lenguajes como C, como el uso de memoria liberada o la falta de liberación. En Java, el recolector de basura se ejecuta periódicamente y determina qué objetos ya no tienen referencias activas.
 
 
 ## 7. ¿Qué es un método? ¿Qué es la **sobrecarga de métodos**? 
