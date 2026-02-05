@@ -55,12 +55,39 @@ Por favor, escribe en impersonal las respuestas.
 
 ## 7. ¿Qué es un método? ¿Qué es la **sobrecarga de métodos**? 
 
-### Respuesta
+### Un método es una función asociada a una clase que define un comportamiento que los objetos de esa clase pueden realizar. En Java desempeña un papel equivalente a las funciones en C, pero integrado dentro de la estructura de un objeto. Así, un método puede acceder a los atributos del objeto y operar sobre ellos, lo que permite relacionar datos y operaciones de forma organizada. En la práctica, los métodos representan las acciones que un objeto puede ejecutar, como calcular un valor, modificar su estado interno o interactuar con otros objetos del programa.
+### La sobrecarga de métodos consiste en definir varios métodos con el mismo nombre dentro de una misma clase, pero diferenciados por la lista de parámetros. Esta técnica permite ofrecer distintas versiones de una acción según las necesidades del contexto, sin crear nombres diferentes para cada variación. Por ejemplo, se puede disponer de un método que sume dos enteros y otro que sume tres, manteniendo el mismo nombre “sumar” pero cambiando el número o tipo de parámetros.
 
 
 ## 8. Ejemplo mínimo de clase en Java, que se llame Punto, con dos atributos, x e y, con un método que se llame `calculaDistanciaAOrigen`, que calcule la distancia a la posición 0,0. Por sencillez, los atributos deben tener visibilidad por defecto. Crea además un ejemplo de uso con una instancia y uso del método
 
-### Respuesta
+ 
+### class Punto {
+###     // Atributos 
+###     double x;
+###     double y;
+###
+###     // Constructor 
+###     Punto(double x, double y) {
+###         this.x = x;
+###         this.y = y;
+###     }
+###
+###     double calculaDistanciaAOrigen() {
+###         return Math.sqrt(x * x + y * y);
+###     }
+### }
+
+### Exemplo de uso:
+
+### public class Main {
+###     public static void main(String[] args) {
+###         Punto p = new Punto(3, 4);
+###         System.out.println("Distancia al origen: " + p.calculaDistanciaAOrigen());
+###     }
+### }
+
+
 
 
 ## 9. ¿Cuál es el punto de entrada en un programa en Java? ¿Qué es `static` y para qué vale? ¿Sólo se emplea para ese método `main`? ¿Para qué se combina con `final`?
